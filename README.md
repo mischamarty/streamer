@@ -1,8 +1,8 @@
 # streamer
-[![Go Report Card](https://goreportcard.com/badge/github.com/riltech/streamer)](https://goreportcard.com/report/github.com/riltech/streamer)
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
- ![GitHub last commit](https://img.shields.io/github/last-commit/riltech/streamer.svg)
- ![GitHub release](https://img.shields.io/github/release/riltech/streamer.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/riltech/streamer)](https://goreportcard.com/report/github.com/mischamarty/streamer)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub last commit](https://img.shields.io/github/last-commit/mischamarty/streamer.svg)
+![GitHub release](https://img.shields.io/github/release/mischamarty/streamer.svg)
 
 Go Package built around spinning up streaming processes
 
@@ -45,10 +45,10 @@ func main() {
 
 Added
 ```shell script
--hls_flags +program_date_time
+ffmpeg ... -hls_flags +program_date_time ...
 ```
 to have tag
 ```text
-EXT-X-PROGRAM-DATE-TIME
+#EXT-X-PROGRAM-DATE-TIME
 ```
 in m3u8 playlist to have possibility to see absolute time of stream fragment.
